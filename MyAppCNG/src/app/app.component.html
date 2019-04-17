@@ -1,0 +1,4 @@
+<h1>Camera</h1>
+<button (click)="onTakePicture()">Take pic</button>
+
+<img *ngIf="image" [src]="sanitizer.bypassSecurityTrustResourceUrl(image)" />
